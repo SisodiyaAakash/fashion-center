@@ -2,70 +2,70 @@
 /* Primary Fonts */
 @font-face {
   font-family: $primary-font;
-  src: url("../../fonts/primary/WorkSans-LightItalic.woff2") format("woff2");
+  src: url("../fonts/primary/WorkSans-LightItalic.woff2") format("woff2");
   font-weight: $light;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: $primary-font;
-  src: url("../../fonts/primary/WorkSans-Light.woff2") format("woff2");
+  src: url("../fonts/primary/WorkSans-Light.woff2") format("woff2");
   font-weight: $light;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: $primary-font;
-  src: url("../../fonts/primary/WorkSans-Bold.woff2") format("woff2");
+  src: url("../fonts/primary/WorkSans-Bold.woff2") format("woff2");
   font-weight: $bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: $primary-font;
-  src: url("../../fonts/primary/WorkSans-BoldItalic.woff2") format("woff2");
+  src: url("../fonts/primary/WorkSans-BoldItalic.woff2") format("woff2");
   font-weight: $bold;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: $primary-font;
-  src: url("../../fonts/primary/WorkSans-Medium.woff2") format("woff2");
+  src: url("../fonts/primary/WorkSans-Medium.woff2") format("woff2");
   font-weight: $medium;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: $primary-font;
-  src: url("../../fonts/primary/WorkSans-Italic.woff2") format("woff2");
+  src: url("../fonts/primary/WorkSans-Italic.woff2") format("woff2");
   font-weight: $regular;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: $primary-font;
-  src: url("../../fonts/primary/WorkSans-MediumItalic.woff2") format("woff2");
+  src: url("../fonts/primary/WorkSans-MediumItalic.woff2") format("woff2");
   font-weight: $medium;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: $primary-font;
-  src: url("../../fonts/primary/WorkSans-Regular.woff2") format("woff2");
+  src: url("../fonts/primary/WorkSans-Regular.woff2") format("woff2");
   font-weight: $regular;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: $primary-font;
-  src: url("../../fonts/primary/WorkSans-SemiBoldItalic.woff2") format("woff2");
+  src: url("../fonts/primary/WorkSans-SemiBoldItalic.woff2") format("woff2");
   font-weight: $semi-bold;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: $primary-font;
-  src: url("../../fonts/primary/WorkSans-SemiBold.woff2") format("woff2");
+  src: url("../fonts/primary/WorkSans-SemiBold.woff2") format("woff2");
   font-weight: $semi-bold;
   font-style: normal;
   font-display: swap;
@@ -74,7 +74,7 @@
 /* Secondary Fonts */
 @font-face {
   font-family: $secondary-font;
-  src: url("../../fonts/secondary/CormorantGaramond-BoldItalic.woff2")
+  src: url("../fonts/secondary/CormorantGaramond-BoldItalic.woff2")
     format("woff2");
   font-weight: $bold;
   font-style: italic;
@@ -82,7 +82,7 @@
 }
 @font-face {
   font-family: $secondary-font;
-  src: url("../../fonts/secondary/CormorantGaramond-Bold.woff2") format("woff2");
+  src: url("../fonts/secondary/CormorantGaramond-Bold.woff2") format("woff2");
   font-weight: $bold;
   font-style: normal;
   font-display: swap;
@@ -114,7 +114,10 @@ body {
     font-family: $primary-font;
     font-weight: $light;
   }
-  ul li,
+  ul li {
+    font-family: $primary-font;
+    font-weight: $medium;
+  }
   input,
   textarea,
   select option {

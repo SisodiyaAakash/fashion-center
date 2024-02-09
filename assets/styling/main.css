@@ -13,70 +13,70 @@
 /* Primary Fonts */
 @font-face {
   font-family: "Work Sans";
-  src: url("../../fonts/primary/WorkSans-LightItalic.woff2") format("woff2");
+  src: url("../fonts/primary/WorkSans-LightItalic.woff2") format("woff2");
   font-weight: 300;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Work Sans";
-  src: url("../../fonts/primary/WorkSans-Light.woff2") format("woff2");
+  src: url("../fonts/primary/WorkSans-Light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Work Sans";
-  src: url("../../fonts/primary/WorkSans-Bold.woff2") format("woff2");
+  src: url("../fonts/primary/WorkSans-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Work Sans";
-  src: url("../../fonts/primary/WorkSans-BoldItalic.woff2") format("woff2");
+  src: url("../fonts/primary/WorkSans-BoldItalic.woff2") format("woff2");
   font-weight: 700;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Work Sans";
-  src: url("../../fonts/primary/WorkSans-Medium.woff2") format("woff2");
+  src: url("../fonts/primary/WorkSans-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Work Sans";
-  src: url("../../fonts/primary/WorkSans-Italic.woff2") format("woff2");
+  src: url("../fonts/primary/WorkSans-Italic.woff2") format("woff2");
   font-weight: 400;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Work Sans";
-  src: url("../../fonts/primary/WorkSans-MediumItalic.woff2") format("woff2");
+  src: url("../fonts/primary/WorkSans-MediumItalic.woff2") format("woff2");
   font-weight: 500;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Work Sans";
-  src: url("../../fonts/primary/WorkSans-Regular.woff2") format("woff2");
+  src: url("../fonts/primary/WorkSans-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Work Sans";
-  src: url("../../fonts/primary/WorkSans-SemiBoldItalic.woff2") format("woff2");
+  src: url("../fonts/primary/WorkSans-SemiBoldItalic.woff2") format("woff2");
   font-weight: 600;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Work Sans";
-  src: url("../../fonts/primary/WorkSans-SemiBold.woff2") format("woff2");
+  src: url("../fonts/primary/WorkSans-SemiBold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -84,14 +84,14 @@
 /* Secondary Fonts */
 @font-face {
   font-family: "Cormorant Garamond";
-  src: url("../../fonts/secondary/CormorantGaramond-BoldItalic.woff2") format("woff2");
+  src: url("../fonts/secondary/CormorantGaramond-BoldItalic.woff2") format("woff2");
   font-weight: 700;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Cormorant Garamond";
-  src: url("../../fonts/secondary/CormorantGaramond-Bold.woff2") format("woff2");
+  src: url("../fonts/secondary/CormorantGaramond-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -125,7 +125,10 @@ body p {
   font-family: "Work Sans";
   font-weight: 300;
 }
-body ul li,
+body ul li {
+  font-family: "Work Sans";
+  font-weight: 500;
+}
 body input,
 body textarea,
 body select option {
@@ -281,9 +284,158 @@ body .bold {
   font-weight: 700;
 }
 
+.hide {
+  display: none;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
 
+body form input,
+body form select {
+  width: 100%;
+  padding: 35px 50px;
+}
+body form input,
+body form select {
+  height: 50px;
+}
+
 /* Comps */
+body header.header {
+  margin-bottom: 60px;
+}
+body header.header .highlight-wrap {
+  padding: 10px 0;
+  background-color: #888888;
+}
+body header.header .highlight-wrap .highlight {
+  font-size: 21.67px;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+body header.header .highlight-wrap .highlight a {
+  color: inherit;
+  transition: 550ms all ease;
+}
+body header.header .highlight-wrap .highlight a:hover {
+  color: #000000;
+  transition: 550ms all ease;
+}
+body header.header .nav-wrap .top-nav {
+  display: flex;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  justify-content: space-between;
+  gap: 20px;
+  position: relative;
+}
+body header.header .nav-wrap .top-nav .side-area {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+body header.header .nav-wrap .top-nav .side-area button.icon-wrap {
+  background-color: transparent;
+  border: 0;
+  position: relative;
+  cursor: pointer;
+}
+body header.header .nav-wrap .top-nav .side-area button.icon-wrap img {
+  width: 30px;
+  height: 30px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+body header.header .nav-wrap .top-nav .side-area button.icon-wrap .items-count {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #B79E6A;
+  color: #ffffff;
+  font-size: 15px;
+  text-align: center;
+  padding: 4px;
+  min-width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  transform: translate(5px, -5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body header.header .nav-wrap .top-nav .side-area.search-area {
+  justify-content: flex-start;
+}
+body header.header .nav-wrap .top-nav .side-area.search-area .search-form {
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: 550ms all ease;
+}
+body header.header .nav-wrap .top-nav .side-area.profile-area {
+  justify-content: flex-end;
+}
+body header.header .nav-wrap .top-nav .brand-area {
+  justify-content: center;
+}
+body header.header .nav-wrap .top-nav .brand-area .logo {
+  color: #B79E6A;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+body header.header .nav-wrap .top-nav .brand-area .logo a {
+  color: inherit;
+}
+body header.header .nav-wrap .menu-wrap .menu-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  -moz-column-gap: 65px;
+       column-gap: 65px;
+}
+body header.header .nav-wrap .menu-wrap .menu-list .menu-itm {
+  color: #000000;
+  position: relative;
+  transition: 550ms all ease;
+}
+body header.header .nav-wrap .menu-wrap .menu-list .menu-itm::after {
+  content: "";
+  width: 0;
+  height: 4px;
+  background-color: #B79E6A;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(5px);
+  transition: 750ms all ease;
+}
+body header.header .nav-wrap .menu-wrap .menu-list .menu-itm a {
+  color: inherit;
+}
+body header.header .nav-wrap .menu-wrap .menu-list .menu-itm:hover {
+  color: #B79E6A;
+  transition: 550ms all ease;
+}
+body header.header .nav-wrap .menu-wrap .menu-list .menu-itm:hover::after {
+  display: block;
+  width: 100%;
+  right: 0;
+  transition: 750ms all ease;
+}
+
 /* Pages *//*# sourceMappingURL=main.css.map */
