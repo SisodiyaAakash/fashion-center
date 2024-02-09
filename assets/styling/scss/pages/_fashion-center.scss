@@ -1,0 +1,54 @@
+body {
+  main.product-detail-wrapper {
+   padding: 60px;
+
+    .product-detail-inner {
+      @include flex-wrap;
+      justify-content: space-between;
+      gap: 60px;
+
+      .detail-block-section {
+        width: calc(50% - 30px);
+
+        &.media-section {
+         @include flex-center;
+         justify-content: space-between;
+
+          .gallery-slider {
+            &.nav-slider {
+               width: calc(25% - 10px);
+            }
+            &.thumbnail-slider {
+               width: calc(75% - 10px);
+            }
+            &.slick-initialized {
+               @include flex-column;
+               align-items: center;
+            }
+
+            .gallery-itm-wrap {
+               aspect-ratio: 200/300;
+               padding: 10px 0;
+               width: 100%;
+               height: auto;
+               
+               .gallery-itm {
+                  width: 100%;
+                  height: 100%;
+
+                  @include flex-center;
+                  justify-content: center;
+
+                  a {
+                     .youtube-icon {
+                        width: 30px;
+                     }
+                  }
+               }
+            }
+          }
+        }
+      }
+    }
+  }
+}
