@@ -1,0 +1,45 @@
+/* Colours */
+$black: #000000;
+$white: #ffffff;
+$grey: #ADADAE;
+$dark-grey: #888888;
+$light-purple: #FFF7FC;
+$golden: #B79E6A;
+$blue: #4333ff;
+$dark-blue: #1200da;
+$red: #e53935;
+$dark-red: #d32f2f;
+$green: #27ae60;
+$yellow: #c1981b;
+
+/* Font Weight */
+$extra-light: 200;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+$extra-bold: 800;
+$black-weight: 900;
+
+/* Utilities */
+$transition-fast: 350ms all ease;
+$transition: 550ms all ease;
+$transition-slow: 750ms all ease;
+
+
+/* Theme Variables */
+/* Theme colors */
+$primary: $black;
+$secondary: $grey;
+$ratings: $golden;
+
+$primary-bg: $white;
+$secondary-bg: $light-purple;
+
+/* Fonts */
+$primary-font: "Work Sans";
+$secondary-font: "Cormorant Garamond";
+
+/* Layout Variables */
+$primary-radius: 8px;

@@ -1,0 +1,247 @@
+/* Fonts */
+/* Primary Fonts */
+@font-face {
+  font-family: $primary-font;
+  src: url("../../fonts/primary/WorkSans-LightItalic.woff2") format("woff2");
+  font-weight: $light;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: $primary-font;
+  src: url("../../fonts/primary/WorkSans-Light.woff2") format("woff2");
+  font-weight: $light;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: $primary-font;
+  src: url("../../fonts/primary/WorkSans-Bold.woff2") format("woff2");
+  font-weight: $bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: $primary-font;
+  src: url("../../fonts/primary/WorkSans-BoldItalic.woff2") format("woff2");
+  font-weight: $bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: $primary-font;
+  src: url("../../fonts/primary/WorkSans-Medium.woff2") format("woff2");
+  font-weight: $medium;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: $primary-font;
+  src: url("../../fonts/primary/WorkSans-Italic.woff2") format("woff2");
+  font-weight: $regular;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: $primary-font;
+  src: url("../../fonts/primary/WorkSans-MediumItalic.woff2") format("woff2");
+  font-weight: $medium;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: $primary-font;
+  src: url("../../fonts/primary/WorkSans-Regular.woff2") format("woff2");
+  font-weight: $regular;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: $primary-font;
+  src: url("../../fonts/primary/WorkSans-SemiBoldItalic.woff2") format("woff2");
+  font-weight: $semi-bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: $primary-font;
+  src: url("../../fonts/primary/WorkSans-SemiBold.woff2") format("woff2");
+  font-weight: $semi-bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Secondary Fonts */
+@font-face {
+  font-family: $secondary-font;
+  src: url("../../fonts/secondary/CormorantGaramond-BoldItalic.woff2")
+    format("woff2");
+  font-weight: $bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: $secondary-font;
+  src: url("../../fonts/secondary/CormorantGaramond-Bold.woff2") format("woff2");
+  font-weight: $bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Typography Styling */
+body {
+  font-family: $primary-font;
+  font-weight: $light;
+
+  font-size: 28px;
+  line-height: 1;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $primary-font;
+    font-weight: $medium;
+
+    * {
+      font-family: inherit;
+      font-weight: inherit;
+    }
+  }
+  p {
+    font-family: $primary-font;
+    font-weight: $light;
+  }
+  ul li,
+  input,
+  textarea,
+  select option {
+    font-family: $primary-font;
+    font-weight: $regular;
+  }
+
+  input,
+  textarea,
+  select,
+  button {
+    outline: none;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: $primary-radius;
+    line-height: 1;
+  }
+
+  button {
+    font-family: $primary-font;
+    text-decoration: none;
+    font-weight: $medium;
+
+    * {
+      font-family: inherit;
+      font-weight: inherit;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    padding: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  a,
+  p,
+  button {
+    margin: 0;
+    font-style: normal;
+    line-height: 1;
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  h1 {
+    font-size: 74px;
+
+    @media screen and (max-width: 767px) {
+      // Typography for small screen size
+    }
+  }
+
+  h2 {
+    //  font-size: value;
+
+    @media screen and (max-width: 767px) {
+      // Typography for small screen size
+    }
+  }
+
+  h3 {
+    //  font-size: value;
+
+    @media screen and (max-width: 767px) {
+      // Typography for small screen size
+    }
+  }
+
+  h4 {
+    //  font-size: value;
+
+    @media screen and (max-width: 767px) {
+      // Typography for small screen size
+    }
+  }
+
+  h5 {
+    //  font-size: value;
+
+    @media screen and (max-width: 767px) {
+      // Typography for small screen size
+    }
+  }
+
+  h6 {
+    //  font-size: value;
+
+    @media screen and (max-width: 767px) {
+      // Typography for small screen size
+    }
+  }
+
+  p,
+  li,
+  input,
+  textarea,
+  select {
+    font-size: 28px;
+
+    @media screen and (max-width: 767px) {
+      // Typography for small screen size
+    }
+  }
+
+  button {
+    font-size: 24px;
+    text-align: center;
+
+    @media screen and (max-width: 767px) {
+      // Typography for small screen size
+    }
+  }
+}
