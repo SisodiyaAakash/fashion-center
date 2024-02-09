@@ -1,0 +1,26 @@
+body {
+   .breadcrumb-wrapper {
+      background-color: $secondary-bg;
+      padding: 20px 0;
+
+      .breadcrumb-list {
+         @include flex-center-wrap;
+         justify-content: center;
+         column-gap: 25px;
+         font-size: 28px;
+         font-weight: $regular;
+         color: $black;
+
+         a.breadcrumb-itm {
+            cursor: pointer;
+            transition: $transition;
+            color: inherit;
+
+            &:hover {
+               color: $ratings;
+               transition: $transition;
+            }
+         }
+      }
+   }
+}

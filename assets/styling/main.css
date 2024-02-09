@@ -438,4 +438,29 @@ body header.header .nav-wrap .menu-wrap .menu-list .menu-itm:hover::after {
   transition: 750ms all ease;
 }
 
+body .breadcrumb-wrapper {
+  background-color: #FFF7FC;
+  padding: 20px 0;
+}
+body .breadcrumb-wrapper .breadcrumb-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+  font-size: 28px;
+  font-weight: 400;
+  color: #000000;
+}
+body .breadcrumb-wrapper .breadcrumb-list a.breadcrumb-itm {
+  cursor: pointer;
+  transition: 550ms all ease;
+  color: inherit;
+}
+body .breadcrumb-wrapper .breadcrumb-list a.breadcrumb-itm:hover {
+  color: #B79E6A;
+  transition: 550ms all ease;
+}
+
 /* Pages *//*# sourceMappingURL=main.css.map */
